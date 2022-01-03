@@ -73,6 +73,18 @@ header nav ul li a:hover {
 .title {
   color: var(--primary-color);
   font-size: 24px;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  border-right-style: solid;
+  border-right-width: 5px;
+  border-right-color: var(--tertiary-color2);
+  float: left;
+  display: inline;
+}
+
+.meat {
+  justify-content: right;
 }
 
 p {
@@ -86,7 +98,15 @@ p {
   object-fit: contain;
 }
 
-/* Projects Stle */
+.content {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Projects Style */
 .container {
   position: relative;
   width: 50%;
