@@ -69,26 +69,44 @@ header nav ul li a:hover {
   justify-content: center;
   flex-wrap: wrap;
 }
-/* About Me Style */
+
+/* Content Style */
+.parentBox {
+  width: auto;
+  margin: 15px;
+  display: flex;
+}
+
 .title {
+  width: auto;
+  margin: 1%;
   color: var(--primary-color);
   font-size: 24px;
   text-align: center;
-  width: 300px;
-  height: 200px;
-  border-right-style: solid;
-  border-right-width: 5px;
-  border-right-color: var(--tertiary-color2);
+  width: 50%;
+  height: 75%;
   float: left;
-  display: inline;
 }
 
-.meat {
+.content {
+  width: auto;
+  padding: 10px;
+  margin: auto;
   justify-content: right;
+  width: 50%;
+  height: 75%;
+  display: inline;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-left-style: solid;
+  border-left-width: 5px;
+  border-left-color: var(--tertiary-color2);
+  float: right;
+  flex-wrap: wrap;
 }
 
 p {
-  font-size: 16px;
+  font-size: 24px;
   color: var(--primary-color);
 }
 
@@ -98,64 +116,57 @@ p {
   object-fit: contain;
 }
 
-.content {
-  width: 100%;
-  margin: 0 auto;
+/* Projects Style */
+#projects .content {
   display: flex;
+  align-items: flex-start;
   flex-wrap: wrap;
-  justify-content: space-around;
+  position: absolute;
 }
 
-/* Projects Style */
-.container {
+#projects .content a {
+  display: flex;
   position: relative;
-  width: 50%;
+  width: 100%;
 }
 
 .image {
   display: block;
   width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  background-color: var(--primary-color);
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: 0.5s ease;
-}
-
-.container:hover .overlay {
-  bottom: 0;
   height: 100%;
+  margin: 10px;
+}
+
+.container {
+  position: relative;
+  font-family: Arial;
 }
 
 .text {
-  white-space: nowrap;
-  color: var(--tertiary-color);
-  font-size: 20px;
   position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 10px;
+  text-align: center;
   font-weight: lighter;
 }
 
 /* Contact Me Stlyes */
-.contacts li {
+.content ul {
+  padding: 10px;
+  margin: auto;
+}
+
+.content li {
   color: var(--primary-color);
-  font-size: 16px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -163,18 +174,40 @@ h4 {
   list-style: none;
 }
 
-.contacts a {
+.content a {
   text-decoration: none;
   color: var(--primary-color);
 }
 
-.contacts li a {
+.content li a {
   padding: 10px 15px;
   font-weight: lighter;
-  font-size: 1.5vw;
+  font-size: 24px;
 }
 
-.contacts li a:hover {
+.content li a:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 15px;
+  text-shadow: none;
+}
+/* Resume Stlyes */
+
+.resume {
+  display: flex;
+  margin: auto;
+  color: var(--primary-color);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: var(--primary-color);
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 24px;
+}
+
+.resume:hover {
   background: var(--primary-color);
   color: var(--secondary-color);
   border-radius: 15px;
