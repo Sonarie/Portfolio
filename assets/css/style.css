@@ -6,7 +6,7 @@
 }
 
 header {
-  padding: 20px 35px;
+  padding: 1.5vw 3vh;
   background-color: var(--tertiary-color);
   display: flex;
   justify-content: space-between;
@@ -23,7 +23,7 @@ header {
 
 header h1 {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 3.6em;
   color: var(--primary-color);
   margin: 0;
 }
@@ -48,7 +48,7 @@ header nav ul {
 header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
-  font-size: 1.65vw;
+  font-size: 1.4em;
 }
 
 header nav ul li a:hover {
@@ -66,18 +66,57 @@ header nav ul li a:hover {
   background-attachment: fixed;
   background-position: 80%;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   flex-wrap: wrap;
 }
-/* About Me Style */
+
+.flare p {
+  font-size: 1.8em;
+  font-weight: bold;
+  padding-right: 8vw;
+}
+
+/* Content Style */
+.parentBox {
+  width: auto;
+  margin: 15px;
+  display: flex;
+}
+
 .title {
+  width: auto;
+  margin: 1%;
   color: var(--primary-color);
-  font-size: 24px;
+  text-align: center;
+  width: 20%;
+  height: 75%;
+  float: left;
+}
+
+.content {
+  width: auto;
+  padding: 10px;
+  margin: auto;
+  justify-content: right;
+  width: 50%;
+  height: 75%;
+  display: inline;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-left-style: solid;
+  border-left-width: 5px;
+  border-left-color: var(--tertiary-color2);
+  float: right;
+}
+
+.title h2 {
+  font-size: 2.4em;
 }
 
 p {
-  font-size: 16px;
+  font-size: 1.8em;
   color: var(--primary-color);
+  margin: 5px;
 }
 
 .aboutme {
@@ -86,56 +125,77 @@ p {
   object-fit: contain;
 }
 
-/* Projects Stle */
-.container {
+/* Projects Style */
+#projects .content {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  position: absolute;
+}
+
+#projects .content a {
+  display: flex;
   position: relative;
-  width: 50%;
+  width: 100%;
+}
+
+.boxSet1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 10px 5px 10px;
+  width: 100%;
+  height: 100%;
 }
 
 .image {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  border: 5px solid var(--tertiary-color);
+  margin: 10px;
 }
 
-.overlay {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  background-color: var(--primary-color);
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: 0.5s ease;
-}
-
-.container:hover .overlay {
-  bottom: 0;
+.boxSet1 .image1 {
+  display: inline-block;
   height: 100%;
 }
 
+.boxSet1 .image2 {
+  display: inline-block;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  font-family: Arial;
+}
+
 .text {
-  white-space: nowrap;
-  color: var(--tertiary-color);
-  font-size: 20px;
   position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  bottom: 30px;
+  left: 30px;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 10px;
+  text-align: center;
   font-weight: lighter;
 }
 
 /* Contact Me Stlyes */
-.contacts li {
+.content ul {
+  padding: 10px;
+  margin: auto;
+}
+
+.content li {
   color: var(--primary-color);
-  font-size: 16px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -143,20 +203,89 @@ h4 {
   list-style: none;
 }
 
-.contacts a {
+.content a {
   text-decoration: none;
   color: var(--primary-color);
 }
 
-.contacts li a {
+.content li a {
   padding: 10px 15px;
   font-weight: lighter;
-  font-size: 1.5vw;
+  font-size: 24px;
 }
 
-.contacts li a:hover {
+.content li a:hover {
   background: var(--primary-color);
   color: var(--secondary-color);
   border-radius: 15px;
   text-shadow: none;
+}
+/* Resume Stlyes */
+
+.resume {
+  display: flex;
+  margin: auto;
+  color: var(--primary-color);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: var(--primary-color);
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 24px;
+}
+
+.resume:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  .aboutme {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  p {
+    font-size: 2em;
+    text-align: justify;
+    margin: 2px;
+  }
+
+  .content {
+    margin: 10px;
+  }
+
+  .title h2 {
+    font-size: 2em;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  .title h2 {
+    font-size: 1.5em;
+  }
+
+  .content {
+    padding: 5px;
+  }
+
+  p {
+    font-size: 1.8em;
+    text-align: justify;
+    margin: 2px;
+  }
+
+  .aboutme {
+    display: none;
+  }
 }

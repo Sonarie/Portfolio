@@ -2,6 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sonja's Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
@@ -33,62 +34,145 @@
       </nav>
     </header>
 
+    <!--Section under Navigation-->
     <section class="flare">
-      <h2>Develop & Design</h2>
+      <p>Develop & Design</p>
     </section>
 
-    <article class="content">
-      <h2 class="title">About Me</h2>
-      <p>
-        I recently started my development career and looking to grow into the
-        field and hone in my expertise in training, process improvement and
-        design.
-      </p>
-      <img src="./assets/images/aboutMe.jpg" at="Sonja Watson" class="aboutme"/>
+    <!-- entire meat of the page -->
+    <!--About Me-->
+    <article class="parentBox">
+      <div id="about-me" class="title">
+        <h2>About Me</h2>
+      </div>
+      <div class="content">
+        <p>
+          I recently started my development career and looking to grow into the
+          field and hone in my expertise in training, process improvement and
+          design.
+        </p>
+        <img
+          src="./assets/images/aboutMe.jpg"
+          at="Sonja Watson"
+          class="aboutme"
+        />
+      </div>
     </article>
 
-    <article class="content">
-      <h2 class="title">My Projects</h2>
-      <div class="container">
+    <!--Projects-->
+    <article class="parentBox">
+      <div id="my-projects" class="title">
+        <h2>My Projects</h2>
+      </div>
+      <!--Content Boxes-->
+      <div id="projects" class="content">
         <a href="https://Sonarie.github.io/run-buddy/" target="_blank">
           <img
             src="./assets/images/RunBuddyImg.png"
             alt="Run Buddy"
             class="image"
           />
-          <div class="overlay">
+          <div class="container">
             <div class="text">
               Run Buddy
               <h4>HTML/CSS</h4>
             </div>
           </div>
         </a>
-      </div>
 
-      <h3>Placeholder</h3>
-      <a href="" target="_blank">
-        <img src="" alt="" class="image" />
-        <div class="overlay">
-          <div class="text">
-            <h4></h4>
-          </div>
-        </div>
-      </a>
+        <!--First 2 boxes under the large project-->
+        <section class="boxSet1">
+          <a href="https://placeholder.com/" target="_blank">
+            <img
+              src="https://via.placeholder.com/300x100"
+              alt=""
+              class="image1"
+            />
+            <div class="container">
+              <div class="text">
+                <h4></h4>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://placeholder.com/" target="_blank">
+            <img
+              src="https://via.placeholder.com/300x100"
+              alt=""
+              class="image1"
+            />
+            <div class="container">
+              <div class="text">
+                <h4></h4>
+              </div>
+            </div>
+          </a>
+        </section>
+
+        <!--Second 2 boxes under the first boxSet1-->
+        <section class="boxSet1">
+          <a href="https://placeholder.com/" target="_blank">
+            <img
+              src="https://via.placeholder.com/300x100"
+              alt=""
+              class="image1"
+            />
+            <div class="container">
+              <div class="text">
+                <h4></h4>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://placeholder.com/" target="_blank">
+            <img
+              src="https://via.placeholder.com/300x100"
+              alt=""
+              class="image2"
+            />
+            <div class="container">
+              <div class="text">
+                <h4></h4>
+              </div>
+            </div>
+          </a>
+        </section>
+      </div>
     </article>
 
     <!-- Contact Me-->
-    <article class="content">
-      <h2 class="title">Contact Me</h2>
-      <ul class="contacts">
-      <li><a href="tel:6128651102">612-865-1102</a></li>
-      <li><a href="mailto:sonarie1980@gmail.com">sonarie1980@gmail.com</a></li>
-      <li><a href="https://github.com/Sonarie" target="_blank">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/sonjaliveoak/" target="_blank">LinkedIn</a></li>
-
+    <article class="parentBox">
+      <div id="contact-me" class="title">
+        <h2>Contact Me</h2>
+      </div>
+      <div class="content">
+        <ul>
+          <li><a href="tel:6128651102">612-865-1102</a></li>
+          <li>
+            <a href="mailto:sonarie1980@gmail.com">sonarie1980@gmail.com</a>
+          </li>
+          <li>
+            <a href="https://github.com/Sonarie" target="_blank">GitHub</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/sonjaliveoak/" target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
     </article>
 
-    <article class="content">
-      <h2 class="title">Resume</h2>
+    <!--Resume-->
+    <article class="parentBox">
+      <div id="resume" class="title">
+        <h2>Resume</h2>
+      </div>
+      <div class="content">
+        <a href="./assets/images/Resume.pdf" target="_blank" class="resume"
+          >Open Here</a
+        >
+      </div>
     </article>
   </body>
 </html>
