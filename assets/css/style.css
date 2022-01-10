@@ -6,7 +6,7 @@
 }
 
 header {
-  padding: 20px 35px;
+  padding: 1.5vw 3vh;
   background-color: var(--tertiary-color);
   display: flex;
   justify-content: space-between;
@@ -23,7 +23,7 @@ header {
 
 header h1 {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 3.6em;
   color: var(--primary-color);
   margin: 0;
 }
@@ -48,7 +48,7 @@ header nav ul {
 header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
-  font-size: 24px;
+  font-size: 1.4em;
 }
 
 header nav ul li a:hover {
@@ -66,8 +66,14 @@ header nav ul li a:hover {
   background-attachment: fixed;
   background-position: 80%;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   flex-wrap: wrap;
+}
+
+.flare p {
+  font-size: 1.8em;
+  font-weight: bold;
+  padding-right: 8vw;
 }
 
 /* Content Style */
@@ -81,7 +87,6 @@ header nav ul li a:hover {
   width: auto;
   margin: 1%;
   color: var(--primary-color);
-  font-size: 24px;
   text-align: center;
   width: 20%;
   height: 75%;
@@ -104,9 +109,14 @@ header nav ul li a:hover {
   float: right;
 }
 
+.title h2 {
+  font-size: 2.4em;
+}
+
 p {
-  font-size: 24px;
+  font-size: 1.8em;
   color: var(--primary-color);
+  margin: 5px;
 }
 
 .aboutme {
@@ -131,6 +141,7 @@ p {
 
 .boxSet1 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 10px 10px 5px 10px;
   width: 100%;
@@ -147,13 +158,11 @@ p {
 
 .boxSet1 .image1 {
   display: inline-block;
-  width: 50%;
   height: 100%;
 }
 
 .boxSet1 .image2 {
   display: inline-block;
-  width: 49%;
   height: 100%;
 }
 
@@ -234,16 +243,49 @@ h4 {
   text-shadow: none;
 }
 
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-  header h1 {
-    padding: 30px;
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  .aboutme {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
-  header nav {
-    padding: 20px;
-    font-size: 20px;
+  p {
+    font-size: 2em;
+    text-align: justify;
+    margin: 2px;
   }
 
-  .title {
-    font-size: ;
+  .content {
+    margin: 10px;
+  }
+
+  .title h2 {
+    font-size: 2em;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  .title h2 {
+    font-size: 1.5em;
+  }
+
+  .content {
+    padding: 5px;
+  }
+
+  p {
+    font-size: 1.8em;
+    text-align: justify;
+    margin: 2px;
+  }
+
+  .aboutme {
+    display: none;
   }
 }
