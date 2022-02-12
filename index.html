@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sonja's Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
@@ -42,10 +46,10 @@
     <!-- entire meat of the page -->
     <!--About Me-->
     <article class="parentBox">
-      <div id="about-me" class="title">
+      <div id="about-me" class="title col-md-3">
         <h2>About Me</h2>
       </div>
-      <div class="content">
+      <div class="content col-md-8">
         <p>
           I recently started my development career and looking to grow into the
           field and hone in my expertise in training, process improvement and
@@ -61,91 +65,86 @@
 
     <!--Projects-->
     <article class="parentBox">
-      <div id="my-projects" class="title">
+      <div id="my-projects" class="title col-lg-3">
         <h2>My Projects</h2>
       </div>
       <!--Content Boxes-->
-      <div id="projects" class="content">
-        <a href="https://Sonarie.github.io/run-buddy/" target="_blank">
+      <div id="projects" class="content col-lg-8">
+        <a
+          href="https://sonarie.github.io/Seven/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
-            src="./assets/images/RunBuddyImg.png"
-            alt="Run Buddy"
+            src="./assets/images/dateLime.jpg"
+            alt="dateLime"
             class="image"
           />
-          <div class="container">
-            <div class="text">
-              Run Buddy
-              <h4>HTML/CSS</h4>
-            </div>
-          </div>
         </a>
 
         <!--First 2 boxes under the large project-->
-        <section class="boxSet1">
-          <a href="https://placeholder.com/" target="_blank">
+
+        <div class="row">
+          <a
+            href="https://Sonarie.github.io/run-buddy/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
-              src="https://via.placeholder.com/300x100"
-              alt=""
-              class="image1"
+              src="./assets/images/RunBuddyImg.jpg"
+              alt="Run Buddy"
+              class="col-md-6"
             />
-            <div class="container">
-              <div class="text">
-                <h4></h4>
-              </div>
-            </div>
           </a>
 
-          <a href="https://placeholder.com/" target="_blank">
+          <a
+            href="https://placeholder.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
-              src="https://via.placeholder.com/300x100"
+              src="https://via.placeholder.com/200x100"
               alt=""
-              class="image1"
+              class="col-md-6"
             />
-            <div class="container">
-              <div class="text">
-                <h4></h4>
-              </div>
-            </div>
           </a>
-        </section>
+        </div>
 
         <!--Second 2 boxes under the first boxSet1-->
-        <section class="boxSet1">
-          <a href="https://placeholder.com/" target="_blank">
+        <div class="row">
+          <a
+            href="https://placeholder.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               src="https://via.placeholder.com/300x100"
               alt=""
-              class="image1"
+              class="col-md-6"
             />
-            <div class="container">
-              <div class="text">
-                <h4></h4>
-              </div>
-            </div>
           </a>
 
-          <a href="https://placeholder.com/" target="_blank">
+          <a
+            href="https://placeholder.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               src="https://via.placeholder.com/300x100"
               alt=""
-              class="image2"
+              class="col-md-6"
             />
-            <div class="container">
-              <div class="text">
-                <h4></h4>
-              </div>
-            </div>
           </a>
-        </section>
+        </div>
       </div>
     </article>
 
     <!-- Contact Me-->
     <article class="parentBox">
-      <div id="contact-me" class="title">
+      <div id="contact-me" class="title col-md-3">
         <h2>Contact Me</h2>
       </div>
-      <div class="content">
+      <div class="content col-md-8">
         <ul>
           <li><a href="tel:6128651102">612-865-1102</a></li>
           <li>
@@ -165,10 +164,10 @@
 
     <!--Resume-->
     <article class="parentBox">
-      <div id="resume" class="title">
+      <div id="resume" class="title col-md-3">
         <h2>Resume</h2>
       </div>
-      <div class="content">
+      <div class="content col-md-8">
         <a href="./assets/images/Resume.pdf" target="_blank" class="resume"
           >Open Here</a
         >
