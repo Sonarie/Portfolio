@@ -239,40 +239,73 @@ h4 {
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-  .aboutme {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  p {
-    font-size: 2em;
-    text-align: justify;
-    margin: 2px;
+  .title h2 {
+    font-size: 1.7em;
+    word-wrap: normal;
   }
 
   .content {
     margin: 10px;
   }
 
-  .title h2 {
-    font-size: 2em;
+  .content p {
+    font-size: 1.7em;
+    text-align: justify;
+    margin: 2px;
+    word-wrap: normal;
+  }
+
+  .content li a {
+    font-size: 1.7em;
+    text-align: justify;
+    margin: 2px;
+    word-wrap: normal;
+  }
+
+  .content a {
+    font-size: 1.7em;
+    text-align: justify;
+    margin: 2px;
+    word-wrap: normal;
+  }
+
+  .aboutme {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
   .title h2 {
-    font-size: 1.5em;
+    font-size: 1.2em;
+    word-wrap: normal;
   }
 
   .content {
     padding: 5px;
   }
 
-  p {
-    font-size: 1.8em;
+  .content p {
+    font-size: 1.2em;
     text-align: justify;
     margin: 2px;
+    word-wrap: normal;
+  }
+
+  .content li a {
+    font-size: 1.2em;
+    text-align: justify;
+    margin: 2px;
+    word-wrap: normal;
+  }
+
+  .content a {
+    font-size: 1.2em;
+    text-align: justify;
+    margin: 2px;
+    word-wrap: normal;
   }
 
   .aboutme {
@@ -283,17 +316,33 @@ h4 {
 /* MEDIA QUERY FOR SMALL MOBILE*/
 @media screen and (max-width: 400px) {
   .title h2 {
-    font-size: 1.2em;
+    font-size: 1em;
+    word-wrap: normal;
   }
 
   .content {
     padding: 5px;
   }
 
-  p {
-    font-size: 1.5em;
+  .content p {
+    font-size: 1em;
     text-align: left;
     margin: 2px;
+    word-wrap: normal;
+  }
+
+  .content li a {
+    font-size: 1em;
+    text-align: left;
+    margin: 2px;
+    word-wrap: normal;
+  }
+
+  .content a {
+    font-size: 1em;
+    text-align: left;
+    margin: 2px;
+    word-wrap: normal;
   }
 
   .aboutme {
